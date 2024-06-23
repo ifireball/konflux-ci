@@ -1,3 +1,10 @@
+#:schema "https://mise.jdx.dev/schema/mise.json"
 [tools]
 kind = "0.22.0"
 kubectl = "1.30.0"
+tekton-cli = "0.37.0"
+tekton-pac-cli = "0.27.1"
+
+[plugins]
+# We need this until https://github.com/asdf-vm/asdf-plugins/pull/1014 is merged
+tekton-pac-cli = "https://github.com/ifireball/asdf-tekton-pac-cli.git"
